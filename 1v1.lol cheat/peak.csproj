@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{34A25C04-C085-4FB2-BB21-66401E668575}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_1v1.lol_cheat</RootNamespace>
+    <AssemblyName>peak</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="1v1">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\1v1.dll</HintPath>
+    </Reference>
+    <Reference Include="1v1.DevSettings">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\1v1.DevSettings.dll</HintPath>
+    </Reference>
+    <Reference Include="Ashley.MeshSplitter, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Ashley.MeshSplitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="DemiLib">
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenPro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\DOTweenPro.dll</HintPath>
+    </Reference>
+    <Reference Include="HBAO.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\HBAO.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="HBAO.Universal.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\HBAO.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonChat">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\PhotonChat.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonRealtime">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\PhotonRealtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonSerializer.Runtime">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\PhotonSerializer.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\PhotonUnityNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonUnityNetworking.Utilities">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\PhotonUnityNetworking.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="PhotonWebSocket">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\PhotonWebSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UniTask">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UniTask.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Configuration">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Device">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments.Internal">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Environments.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Internal">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Registration">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Registration.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Scheduler">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Scheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Telemetry">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Threading">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.Services.Core.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.AppleCore">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.AppleCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.AppleMacosStub">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.AppleMacosStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.AppleStub">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.AppleStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Codeless">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityCore">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.SecurityCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.SecurityStub">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.SecurityStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.Stores">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.Stores.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.WinRTCore">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.WinRTCore.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Purchasing.WinRTStub">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.Purchasing.WinRTStub.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\SteamLibrary\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityTechnologies.SignInWithApple">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\1v1.LOL\1v1_LOL_Data\Managed\UnityTechnologies.SignInWithApple.dll</HintPath>
+    </Reference>
+    <Reference Include="Zorro.AutoLOD, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Zorro.AutoLOD.dll</HintPath>
+    </Reference>
+    <Reference Include="Zorro.ControllerSupport, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PEAK\PEAK_Data\Managed\Zorro.ControllerSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Zorro.Core.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cheat.cs" />
+    <Compile Include="GUI.cs" />
+    <Compile Include="Loading.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
