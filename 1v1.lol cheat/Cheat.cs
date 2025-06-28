@@ -258,42 +258,7 @@ namespace _1v1.lol_cheat
 
 
 
-        private static void BodyESP(bool enable)
-        {
-            if (PhotonNetwork.InRoom)
-            {
-                foreach (Character playerObjs in UnityEngine.Object.FindObjectsOfType<Character>())
-                {
-                    if (playerObjs != null)
-                    {
-                        if (playerObjs.gameObject.GetComponentInChildren<SkinnedMeshRenderer>())
-                        {
-                            playerObjs.gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material.shader = Shader.Find("GUI/Text Shader");
-                            playerObjs.gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material.color = Color.Lerp(Color.cyan, Color.green, Mathf.PingPong(Time.time / 2f, 1f));
-                        }
-                    }
-                }
-            }
-        }
-
-        public static void DisableBodyESP()
-        {
-            if (PhotonNetwork.InRoom)
-            {
-                foreach (PlayerController playerObjs in UnityEngine.Object.FindObjectsOfType<PlayerController>())
-                {
-                    if (playerObjs != null)
-                    {
-                        if (playerObjs.gameObject.GetComponentInChildren<SkinnedMeshRenderer>())
-                        {
-                            playerObjs.gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material.shader = Shader.Find("PlayerToonShader");
-                            playerObjs.gameObject.GetComponentInChildren<SkinnedMeshRenderer>().material.color = Color.white;
-                        }
-                    }
-                }
-            }
-        }
-
+       
 
         private static void BoxESP(bool enable)
         {
@@ -574,11 +539,7 @@ namespace _1v1.lol_cheat
             }
 
 
-            if (GUI.boxesp)
-            {
-                BodyESP(true);
-            }
-            else { BodyESP(false); }
+           
 
             if (toggled != lastToggledState)
             {
