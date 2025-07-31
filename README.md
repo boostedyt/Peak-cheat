@@ -1,5 +1,7 @@
 # PEAK Source lewis
 
+# credits Outspect https://github.com/outspect/outspect-1v1.lol-cheat
+
 **a cheat I made because i was really bored! decided to make it open source because i aint got anything else to do with my life anyway**
 
 # Current Features:
