@@ -4,6 +4,8 @@
 
 **a cheat I made because i was really bored! decided to make it open source because i aint got anything else to do with my life anyway**
 
+enjoy feel free to pull requests you must install  BepInEx 5.4.23.3
+
 # Current Features:
 GodMode
 Box ESP
